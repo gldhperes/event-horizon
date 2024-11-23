@@ -1,0 +1,45 @@
+#footer{
+    width: 100%;
+    padding: 50px var(--sections_default_padding);
+    padding-bottom: 30px;
+
+    flex-flow: column;
+    gap: 30px;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: var(--footer-color);
+}
+
+#creator{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#creator>a{
+    color: white;
+}
+
+/* SOCIAL LOGO */
+.social_logo_content {
+    gap: 50px;
+}
+
+.social_logo{
+    cursor: pointer;
+}
+
+.social_logo > a > ion-icon {
+    width: var(--social_logo);
+    height: var(--social_logo);
+
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social_logo > a > ion-icon:hover {
+    transform: translateY(-10px);
+    color: orange;
+}

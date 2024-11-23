@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <link rel="icon" href="./imgs/black_hole_icon.png">
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/homepage/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/homepage/mainContent.css">
+    <link rel="stylesheet" type="text/css" href="./css/homepage/subscribe.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/mediaQuery.css">
+
+    <!-- ION ICON -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header" class="flex">
+
+        <div class="h_contents flex">
+            <div class="h_li">
+                <a href="./index.html">home</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./paginas/universo.html">
+                    <p>O</p>
+                    <p>Universo</p>
+                </a>
+            </div>
+
+            <div class="h_li">
+                <a href="./paginas/missoes.html">missões</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./paginas/sistemasolar.html">sitema solar</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./paginas/sonsespaciais.html">
+                    <p>os sons</p>
+                    <p>do espaço</p>
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="dropdown-content" onclick="dropdownMenu()">
+            <ion-icon id="menu" class="ionIcon" name="menu"></ion-icon>
+            <ion-icon id="closeMenu" class="ionIcon" name="close-outline"></ion-icon>
+        </div>
+
+        <div id="dropdownMenu">
+            <div class="navbar flex" onclick="closeDropMenu()">
+                <a href="./index.html">home</a>
+                <a href="./paginas/universo.html">o universo</a>
+                <a href="./paginas/missoes.html">missões</a>
+                <a href="./paginas/sistemasolar.html">sistema solar</a>
+                <a href="./paginas/sonsespaciais.html">os sons do espaço</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="main" class="flex">
+
+        <div id="videoContainer" class="flex">
+            <video autoplay loop muted>
+                <source src="./videos/main.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="mainSlogan flex">
+            <div class="heading flex">
+                <h1 id="mainTitle" >event horizon</h1>
+                <h3>SEU PORTAL PARA O UNIVERSO</h3>
+            </div>
+
+            <div class="social flex">
+                <p>
+                    Com sua curiosidade e nossa rede diversa de astrônomos, o universo da astronomia está ao seu
+                    alcance.
+                </p>
+
+                <div class="social_logo_container flex">
+
+                    <div class="social_logo_content flex">
+
+                        <div class="social_logo">
+                            <a href="https://www.youtube.com/@SpaceToday" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </div>
+
+                        <div class="social_logo">
+                            <a href="https://www.instagram.com/spacetoday/" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+
+                        <div class="social_logo">
+                            <a href="https://www.tiktok.com/@spacetoday" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="logo-tiktok"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <p>O que você vai descobrir?</p>
+
+                    <ion-icon id="seta-down" name="caret-down-outline"></ion-icon>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="mainContent" class="flex">
+
+        <div class="divisor divisorTop flex">
+            <div></div>
+            <div></div>
+        </div>
+
+        <h3 class="section_title">- Um pouco da Nasa -</h3>
+
+        <div id="cardsContainer" class="flex">
+
+            <a class="card flex" href="" target="_blank" rel="noopener noreferrer">
+
+                <h2 class="card_header">Abra caminho para um universo de possibilidades infinitas</h2>
+
+                <div class="card_img_container">
+                    <img class="card_img" src="./imgs/universe.webp" alt="Universo" title="Esta é uma imagem WEBP">
+
+                    <div class="card_img_title_container flex">
+                        <h1 class="card_img_title">Universo</h1>
+                        <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </div>
+                </div>
+
+            </a>
+
+            <a class="card flex" href="" target="_blank" rel="noopener noreferrer">
+
+                <h2 class="card_header">Explore os bastidores das missões que moldam o futuro espacial</h2>
+
+                <div class="card_img_container">
+                    <img class="card_img" src="./imgs/missoes.jpg" alt="Missões" title="Esta é uma imagem JPG">
+
+                    <div class="card_img_title_container flex">
+                        <h1 class="card_img_title">Missões</h1>
+                        <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </div>
+                </div>
+
+            </a>
+
+            <a class="card flex" href="" target="_blank" rel="noopener noreferrer">
+
+                <h2 class="card_header">Descubra as maravilhas que orbitam ao nosso redor: Conheça o Sistema Solar</h2>
+
+                <div class="card_img_container">
+                    <img class="card_img" src="./imgs/sistema_solar.png" alt="Sistema Solar"
+                        title="Esta é uma imagem PNG">
+
+                    <div class="card_img_title_container flex">
+                        <h1 class="card_img_title">Nosso Sistema Solar</h1>
+                        <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </div>
+                </div>
+
+            </a>
+
+        </div>
+
+        <div class="divisor divisorBottom flex">
+            <div></div>
+            <div></div>
+        </div>
+
+    </section>
+
+    <section id="subscribe" class="flex">
+
+        <div class=" subscribe_container flex">
+
+            <h3 class="section_title">- Inscreva-se -</h3>
+
+            <p>
+                Apoie nossos divulgadores nacionais da ciência
+                <span>
+                    🌎🔭📡
+                </span>
+            </p>
+
+
+            <div class=" divulgadores_container flex">
+
+                <a class="divul_card flex" href="https://www.youtube.com/c/Ci%C3%AAnciaSemFim" target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img class="yt_logo" src="./imgs/yt_logos/csf.jpg" alt="Ciência sem fim"
+                        title="Esta imagem é um JPG">
+
+                    <div class="divul_card_content flex">
+                        <h3>Ciência sem Fim</h3>
+
+                        <div>
+                            <p>
+                                1,16 mi de inscritos • 918 vídeos
+                            </p>
+
+                            <p>
+                                O seu conteúdo de ciência favorito! 🪐</p>
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a class="divul_card flex" href="https://www.youtube.com/@CienciaTodoDia" target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img class="yt_logo" src="./imgs/yt_logos/ctd.jpg" alt="Ciência todo dia"
+                        title="Esta imagem é um JPG">
+
+                    <div class="divul_card_content flex">
+                        <h3>Ciência todo dia</h3>
+
+                        <div>
+                            <p>
+                                6,16 mi de inscritos • 1,1 mil vídeos
+                            </p>
+
+                            <p>
+                                Um canal totalmente voltado para assuntos que podem ser abordados no cotidiano, mantendo
+                                seu cérebro sempre ativo!
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a class="divul_card flex" href="" target="_blank" rel="noopener noreferrer">
+
+                    <img class="yt_logo" src="./imgs/yt_logos/mdm.jpg" alt="Manual do mundo"
+                        title="Esta imagem é um JPG">
+
+                    <div class="divul_card_content flex">
+                        <h3>Manual do Mundo</h3>
+
+                        <div>
+                            <p>
+                                19 mi de inscritos • 2,8 mil vídeos
+                            </p>
+
+                            <p>
+                                Olá! Somos o Manual do Mundo e viemos mostrar que há sempre um caminho mais interessante
+                                e divertido para aprender sobre as coisas ao nosso redor.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a class="divul_card flex" href="https://www.youtube.com/@SpaceToday" target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img class="yt_logo" src="./imgs/yt_logos/space_today.jpg" alt="Space Today"
+                        title="Esta imagem é um JPG">
+
+                    <div class="divul_card_content flex">
+                        <h3>Space Today</h3>
+
+                        <div>
+                            <p>
+                                1,96 mi de inscritos • 4,7 mil vídeos
+                            </p>
+
+                            <p>
+                                SpaceToday TV é um canal voltado para a divulgação da astronomia em português.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a class="divul_card flex" href="https://www.youtube.com/@Pirulla25" target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img class="yt_logo" src="./imgs/yt_logos/pirulla.jpg" alt="Canal do Pirulla"
+                        title="Esta imagem é um JPG">
+
+                    <div class="divul_card_content flex">
+                        <h3>Canal do Pirulla</h3>
+
+                        <div>
+                            <p>
+                                1,1 mi de inscritos • 761 vídeos
+                            </p>
+
+                            <p>
+                                Canal voltado às coisas que mais me interessam: ciência, religião e evolução.
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a class="divul_card flex" href="https://www.youtube.com/@CanaldoSchwarza" target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img class="yt_logo" src="./imgs/yt_logos/schwarza.jpg" alt="Canal do Schwarza"
+                        title="Esta imagem é um JPG">
+
+                    <div class="divul_card_content flex">
+                        <h3>Canal do Schwarza</h3>
+
+                        <div>
+                            <p>
+                                1,19 mi de inscritos • 3,7 mil vídeos
+                            </p>
+
+                            <p>
+                                Bora descomplicar o Universo?
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="footer" class="flex">
+
+        <h3 class="section_title">- Apoie nossa causa -</h3>
+        <h1>Compartilhe com amigos</h1>
+        <h3>Ajude a divulgar ciência</h3>
+
+        <div class="social_logo_content flex">
+
+            <div class="social_logo">
+                <a href="https://www.youtube.com/@SpaceToday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.instagram.com/spacetoday/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.tiktok.com/@spacetoday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <div id="copyright" class="flex">
+            <p>Copyright © 2024 | All Rights Reserved | Built by
+                <span id="creator">
+                    <a href="https://gldhperes.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+                        Guilherme Peres
+                    </a>
+                </span>
+            </p>
+        </div>
+
+    </footer>
+
+    <a id="arrowUp" class="flex" href="#header">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script src="./js/dropdownMenu.js"></script>
+</body>
+
+
+</html>

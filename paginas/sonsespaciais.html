@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <link rel="icon" href="../imgs/black_hole_icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/homepage/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/universo/mainContent.css">
+    <link rel="stylesheet" type="text/css" href="../css/spacesound/videosound.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/universo/planetsMainContent.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/universo/beyound.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaQuery.css">
+
+    <!-- ION ICON -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header" class="flex">
+
+        <div class="h_contents flex">
+            <div class="h_li">
+                <a href="../index.html">home</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./universo.html">
+                    <p>O</p>
+                    <p>Universo</p>
+                </a>
+            </div>
+
+            <div class="h_li">
+                <a href="./missoes.html">missões</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./sistemasolar.html">sitema solar</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./sonsespaciais.html">
+                    <p>os sons</p>
+                    <p>do espaço</p>
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="dropdown-content" onclick="dropdownMenu()">
+            <ion-icon id="menu" class="ionIcon" name="menu"></ion-icon>
+            <ion-icon id="closeMenu" class="ionIcon" name="close-outline"></ion-icon>
+        </div>
+
+        <div id="dropdownMenu">
+            <div class="navbar flex" onclick="closeDropMenu()">
+                <a href="../index.html">home</a>
+                <a href="./universo.html">o universo</a>
+                <a href="./missoes.html">missões</a>
+                <a href="./sistemasolar.html">sistema solar</a>
+                <a href="./sonsespaciais.html">os sons do espaço</a>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <section id="main" class="flex">
+
+        <div id="videoContainer" class="flex">
+            <video autoplay loop muted>
+                <source src="../videos/spacesound.webm" type="video/mp4">
+            </video>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="defaultSlogan flex">
+            <div class="heading flex">
+                <h1>Os Sons do Espaço</h1>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="mainContainer" class="flex">
+        <div id="universeContent" class="flex">
+
+            <p>
+                Já se perguntou como seria o som da música das esferas? O Hubble nos traz visões cósmicas, mas essas
+                maravilhas astronômicas também podem ser experimentadas com outros sentidos. Através da sonificação de
+                dados, os mesmos dados digitais que são traduzidos em imagens são transformados em som.
+            </p>
+
+            <p>
+                Elementos da imagem, como brilho e posição, são atribuídos a tons e volumes. Nenhum som pode viajar no
+                espaço, mas as sonificações oferecem uma nova maneira de experimentar e conceituar os dados. As
+                sonificações permitem que o público, incluindo comunidades cegas e com deficiência visual, "ouça"
+                imagens astronômicas e explore seus dados.
+            </p>
+        </div>
+
+        <div id="universeContent" class="flex">
+            <h1>NGC 4676</h1>
+
+            <div class="videoSound flex">
+                <video autoplay loop muted title="Esse video é um MP4">
+                    <source src="../videos/spacesound/NGC 4676.mp4" type="video/mp4">
+                </video>
+
+                <audio controls title="Esse audio é um M4A">
+                    <source src="../sounds/NGC 4676.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <p>
+                As Galáxias dos Ratos são um par de galáxias em colisão que, eventualmente, se fundirão em uma única
+                galáxia. Elas estão localizadas a cerca de 300 milhões de anos-luz de distância na constelação de Coma
+                Berenices. Nesta sonificação de dados, os cientistas representaram o brilho com volume e tom – luzes
+                mais brilhantes são mais altas e possuem tom mais grave. A posição vertical dos objetos na imagem é
+                usada para controlar o tom de cordas musicais sustentadas, e os pratos aumentam de intensidade
+                acompanhando o brilho dos núcleos das galáxias. Ouça também um crash de prato tocado para a estrela em
+                primeiro plano com os picos de difração!
+            </p>
+        </div>
+
+        <div id="universeContent" class="flex">
+            <h1>Arp 140</h1>
+
+            <div class="videoSound flex">
+                <video autoplay loop muted title="Esse video é um WEBM">
+                    <source src="../videos/spacesound/Arp 140.webm" type="video/mp4">
+                </video>
+
+                <audio controls title="Esse audio é um MP3">
+                    <source src="../sounds/Arp 140.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+            <p>
+                Esta sonificação de dados de Arp 140 mostra um par de galáxias em interação. A galáxia mais à esquerda é
+                uma galáxia espiral barrada conhecida como NGC 275, e a galáxia à direita é uma galáxia lenticular
+                chamada NGC 274. Nas galáxias espirais barradas, uma barra de estrelas atravessa o bojo central da
+                galáxia (vista aqui como uma névoa branca brilhante e vertical em NGC 275). As galáxias lenticulares,
+                por outro lado, são classificadas entre galáxias elípticas e espirais, recebendo seu nome devido à
+                aparência de disco quando vistas de lado. Elas geralmente não possuem muito gás e poeira e são compostas
+                principalmente por estrelas antigas.
+            </p>
+
+            <p>
+
+                Os cientistas sonificaram os dados desta imagem, atribuindo tom à cor para a imagem como um todo (luzes
+                mais azuis são mais agudas, enquanto luzes mais vermelhas são mais graves). O tom também é mapeado ao
+                brilho para as estrelas resolvidas e galáxias de fundo, com base em seu tamanho aparente – objetos que
+                parecem maiores têm tons mais graves, e os menores têm tons mais agudos. Luzes mais brilhantes são mais
+                altas em volume em toda a imagem.
+            </p>
+        </div>
+
+
+        <div id="universeContent" class="flex">
+            <h1>V838 Monocerotis</h1>
+
+            <div class="videoSound flex">
+                <video autoplay loop muted title="Esse video é um AVI">
+                    <source src="../videos/spacesound/V838_Monocerotis.mkv" type="video/webm">
+                </video>
+
+                <audio controls title="Esse audio é um WAV">
+                    <source src="../sounds/V838 Monocerotis.wav" type="audio/mp3">
+                </audio>
+            </div>
+
+            <p>
+                Esta sonificação de dados da estrela V838 Monocerotis, ou V838 Mon, mostra duas imagens capturadas pelo
+                Hubble com quase sete meses de diferença. Um pulso de luz da estrela central ilumina nuvens de poeira e
+                gás ao redor de V838 Mon.
+            </p>
+
+            <p>
+                Esta estrela está localizada a cerca de 20.000 anos-luz de distância, na borda externa da Via Láctea.
+                Nesta sonificação, os cientistas mapearam o brilho para o tom e o volume, e as estrelas ao redor foram
+                ajustadas para notas musicais. A sonificação se expande a partir do centro da primeira imagem da
+                estrela, capturada em 20 de maio de 2002, e então desaparece. Em seguida, a sonificação se expande a
+                partir do centro da segunda imagem da estrela, tirada em 17 de dezembro de 2002.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <footer id="footer" class="flex">
+
+        <h3 class="section_title">- Apoie nossa causa -</h3>
+        <h1>Compartilhe com amigos</h1>
+        <h3>Ajude a divulgar ciência</h3>
+
+        <div class="social_logo_content flex">
+
+            <div class="social_logo">
+                <a href="https://www.youtube.com/@SpaceToday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.instagram.com/spacetoday/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.tiktok.com/@spacetoday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <div id="copyright" class="flex">
+            <p>Copyright © 2024 | All Rights Reserved | Built by
+                <span id="creator">
+                    <a href="https://gldhperes.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+                        Guilherme Peres
+                    </a>
+                </span>
+            </p>
+        </div>
+
+    </footer>
+
+    <a id="arrowUp" class="flex" href="#header">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script src="../js/dropdownMenu.js"></script>
+</body>
+
+
+</html>

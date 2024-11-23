@@ -1,0 +1,18 @@
+.videoSound{
+    width: 100%;
+
+    flex-flow: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.videoSound>video{
+    width: 80%;
+    cursor: pointer;
+}
+
+.videoSound>audio{
+    width: 50%;
+}

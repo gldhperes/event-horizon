@@ -1,0 +1,152 @@
+@media only screen and (max-width: 850px) {
+    :root {
+        --social_logo: 20px;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    /* Fazer dropdown menu no Header */
+    #header {
+        /* padding: 10px 40px; */
+        justify-content: flex-start;
+    }
+
+    .h_contents {
+        display: none;
+    }
+
+    .macbook .slogan {
+        font-size: 50px;
+    }
+
+    .dropdown-content {
+        display: flex;
+        transition: 1s;
+    }
+
+    /* MAIN */
+    .defaultSlogan {
+        left: 0;
+        width: 100%;
+    }
+
+    .heading>h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social {
+        width: 80%;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .social>p {
+        text-align: center;
+    }
+
+    /* UNIVERSE CONTENT */
+    #universeContent {
+        text-align: center;
+    }
+
+    #universeContent>h1 {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    /* MORE TOPICS */
+    .moreTopicsTitle {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    #topicsContainer {
+        justify-content: center
+    }
+
+    /* PLANTE CARDS */
+    .planetsTitle,
+    .planetsContent {
+        text-align: center;
+    }
+
+    .planetsContainer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planetsCard {
+        width: 250px;
+    }
+
+    /* VIDEO SOUND */
+    .videoSound>video{
+        width: 100%;
+    }
+    
+    .videoSound>audio{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .section_title {
+        font-size: medium;
+    }
+
+    #footer>h1 {
+        font-size: x-large;
+    }
+
+    #footer>h3 {
+        font-size: medium;
+    }
+
+    #copyright {
+        width: 95%;
+    }
+
+    #copyright>* {
+        font-size: xx-small;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    :root {
+        --sections_default_padding: 20px;
+    }
+
+    /* MISSIONS CONTENT */
+    #missionsContent>h1,
+    #missionsContent>p {
+        text-align: center;
+    }
+
+    #missionsCards {
+        justify-content: center;
+    }
+
+    /* BEYOUNDCARD */
+    .beyoundTitle {
+        text-align: center;
+    }
+
+    .beyoundCard {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .beyoundGifContent {
+        order: 1;
+    }
+
+    .beyoundCardContent {
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+}

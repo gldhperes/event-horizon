@@ -1,0 +1,56 @@
+.planetsMainContent {
+    width: 100%;
+    padding: var(--sections_default_padding);
+
+    flex-flow: column;
+    gap: 20px;
+}
+
+.planetsTitle {
+    width: 100%;
+    text-align: start;
+    /* justify-content: flex-start; */
+}
+
+.planetsContainer {
+    width: 100%;
+    padding: 30px 0;
+
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.planetsCard {
+    width: 300px;
+    height: 500px;
+
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.planetsCard:hover .planetImg {
+    transform: scale(1.2);
+}
+
+.planetsCard:hover .linkBtn {
+    color: orange;
+}
+
+.planetImgContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.planetImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.planetName {
+    width: 100%;
+    text-align: left;
+}

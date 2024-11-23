@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <link rel="icon" href="../imgs/black_hole_icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/universo/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/universo/mainContent.css">
+    <link rel="stylesheet" type="text/css" href="../css/universo/starsContent.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/universo/exoplanetTypes.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaQuery.css">
+
+    <!-- ION ICON -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header" class="flex">
+
+        <div class="h_contents flex">
+            <div class="h_li">
+                <a href="../index.html">home</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./universo.html">
+                    <p>O</p>
+                    <p>Universo</p>
+                </a>
+            </div>
+
+            <div class="h_li">
+                <a href="./missoes.html">missões</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./sistemasolar.html">sitema solar</a>
+            </div>
+
+            <div class="h_li">
+                <a href="./sonsespaciais.html">
+                    <p>os sons</p>
+                    <p>do espaço</p>
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="dropdown-content" onclick="dropdownMenu()">
+            <ion-icon id="menu" class="ionIcon" name="menu"></ion-icon>
+            <ion-icon id="closeMenu" class="ionIcon" name="close-outline"></ion-icon>
+        </div>
+
+        <div id="dropdownMenu">
+            <div class="navbar flex" onclick="closeDropMenu()">
+                <a href="../index.html">home</a>
+                <a href="./universo.html">o universo</a>
+                <a href="./missoes.html">missões</a>
+                <a href="./sistemasolar.html">sistema solar</a>
+                <a href="./sonsespaciais.html">os sons do espaço</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="main" class="flex">
+
+        <div id="imgContainer" class="flex">
+            <img src="../imgs/universe/blackholes_main.webp" alt="Este arquivo é um WEBP">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="defaultSlogan flex">
+            <div class="heading flex">
+                <h1>O básico sobre Buracos Negros</h1>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section id="mainContainer" class="flex">
+
+        <div id="starsContent" class="flex">
+
+            <div id="starsIntro" class="flex">
+                <p>
+                    Buracos negros estão entre os objetos cósmicos mais misteriosos, muito estudados, mas ainda não
+                    totalmente compreendidos. Esses objetos não são realmente buracos. Eles são enormes concentrações de
+                    matéria compactadas em espaços muito pequenos. Um buraco negro é tão denso que a gravidade logo
+                    abaixo de sua superfície, o horizonte de eventos, é forte o suficiente para que nada – nem mesmo a
+                    luz – consiga escapar. O horizonte de eventos não é uma superfície como a da Terra ou mesmo a do
+                    Sol. É uma fronteira que contém toda a matéria que compõe o buraco negro.
+                </p>
+                <p>
+                    Há muito que não sabemos sobre os buracos negros, como a aparência da matéria dentro de seus
+                    horizontes de eventos. No entanto, há muito que os cientistas sabem sobre os buracos negros.
+                </p>
+            </div>
+
+            <!--  -->
+
+
+
+            <div class="starsContentTopic flex">
+                <h1 class="starsContentTitle">Encontrando Buracos Negros</h1>
+
+                <p>
+                    Buracos negros não emitem nem refletem luz, tornando-os efetivamente invisíveis para telescópios. Os
+                    cientistas os detectam e estudam principalmente com base em como afetam seu entorno:
+                </p>
+
+                <!-- <div class="starsContentImgContainer flex">
+                    <img class="starsContentImg" src="../imgs/universe/Milky_Way_illustration.jpeg"
+                        alt="Nebulosa da Carina" title="Essa imagem é um JPEG">
+
+                    <p class="starsContentP flex">
+                        Essa imgem mostra um ilustração da Via Láctea, nossa galáxia.
+                    </p>
+                </div> -->
+
+
+                <div class="bhpoints flex">
+                    <span>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                    <p>
+                        Buracos negros podem ser cercados por anéis de gás e poeira, chamados discos de acreção, que
+                        emitem luz em diversos comprimentos de onda, incluindo raios-X.
+                    </p>
+                </div>
+
+                <div class="bhpoints flex">
+                    <span>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                    <p>
+                        A gravidade intensa de um buraco negro supermassivo pode fazer com que estrelas orbitem ao seu
+                        redor de uma maneira específica. Astrônomos rastrearam as órbitas de várias estrelas próximas ao
+                        centro da Via Láctea para provar que ela abriga um buraco negro supermassivo, uma descoberta que
+                        rendeu o Prêmio Nobel de 2020.
+                    </p>
+                </div>
+
+                <div class="bhpoints flex">
+                    <span>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                    <p>
+                        Quando objetos muito massivos aceleram pelo espaço, eles criam ondulações no tecido do
+                        espaço-tempo chamadas ondas gravitacionais. Os cientistas podem detectar algumas dessas
+                        ondulações pelo efeito delas em detectores.
+                    </p>
+                </div>
+
+                <div class="bhpoints flex">
+                    <span>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                    <p>
+                        Objetos massivos como buracos negros podem dobrar e distorcer a luz de objetos mais distantes.
+                        Esse efeito, chamado lente gravitacional, pode ser usado para encontrar buracos negros isolados
+                        que de outra forma seriam invisíveis.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="starsContentTopic flex">
+                <h1 class="starsContentTitle">
+                    O que Buracos Negros Não São...
+                </h1>
+
+                <div class="bhpoints flex">
+                    <span>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                    <p>
+                        Buracos de minhoca. Eles não fornecem atalhos entre diferentes pontos no espaço, nem portais
+                        para outras dimensões ou universos.
+                    </p>
+                </div>
+
+                <div class="bhpoints flex">
+                    <span>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                    <p>
+                        Aspiradores cósmicos. Buracos negros não sugam matéria. A partir de uma distância
+                        suficientemente grande, seus efeitos gravitacionais são iguais aos de outros objetos com a mesma
+                        massa.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <section class="iframeVideo flex">
+            <iframe width="560" src="https://www.youtube.com/embed/nJ4d4QEDOYM" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </section>
+
+
+
+
+    <footer id="footer" class="flex">
+
+        <h3 class="section_title">- Apoie nossa causa -</h3>
+        <h1>Compartilhe com amigos</h1>
+        <h3>Ajude a divulgar ciência</h3>
+
+        <div class="social_logo_content flex">
+
+            <div class="social_logo">
+                <a href="https://www.youtube.com/@SpaceToday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.instagram.com/spacetoday/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social_logo">
+                <a href="https://www.tiktok.com/@spacetoday" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <div id="copyright" class="flex">
+            <p>Copyright © 2024 | All Rights Reserved | Built by
+                <span id="creator">
+                    <a href="https://gldhperes.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+                        Guilherme Peres
+                    </a>
+                </span>
+            </p>
+        </div>
+
+    </footer>
+
+    <a id="arrowUp" class="flex" href="#header">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script src="../js/dropdownMenu.js"></script>
+</body>
+
+
+</html>

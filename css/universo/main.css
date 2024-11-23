@@ -1,0 +1,62 @@
+#main {
+    width: 100%;
+
+}
+
+
+/* VIDEO CONTAINNER */
+
+#imgContainer {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+
+#imgContainer>img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* SLOGAN  */
+
+#slogan {
+    position: absolute;
+    left: var(--sections_default_padding);
+    bottom: var(--sections_default_padding);
+
+    width: 50%;
+    text-align: center;
+    font-size: larger;
+
+    flex-flow: column;
+    gap: 100px;
+}
+
+.heading {
+    width: 100%;
+}
+
+.heading>h1 {
+    width: 100%;
+    color: orange;
+
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 900;
+    font-size: var(--main-title-size);
+}
+
+
+/* SOCIAL */
+.social {
+    width: 100%;
+    flex-flow: column;
+    text-align: left;
+}
+
+.social>p {
+    width: 100%;
+    text-align: left;
+}

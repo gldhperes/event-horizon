@@ -1,0 +1,60 @@
+.beyound {
+    width: 100%;
+    padding: 50px var(--sections_default_padding);
+
+    flex-flow: column;
+    gap: 100px;
+
+    background-color: var(--main-color);
+}
+
+.beyoundTitle {
+    width: 100%;
+    text-align: left;
+
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.beyoundCard {
+    width: 100%;
+    padding: 20px 0;
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.beyoundCardContent {
+    width: 45%;
+    min-width: 300px;
+
+    gap: 10px;
+    text-align: left;
+
+}
+
+.beyoundCardContentTitle {
+    width: 100%;
+}
+
+.beyoundCardContentTxt {
+    width: 100%;
+    
+}
+
+
+.beyoundGifContent {
+    width: 70%;
+    height: 100%;
+
+}
+
+.beyoundGif{
+    width: 100%;
+    max-width: 800px;
+    min-width: 250px;
+
+    max-height: 400px;
+    min-height: 200px;
+}
